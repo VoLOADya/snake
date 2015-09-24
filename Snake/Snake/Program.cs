@@ -21,9 +21,9 @@ namespace Snake
             hLine1.Draw();
             Horizont hLine2 = new Horizont(0, 78, 24, '#');
             hLine2.Draw();
-            Vertical vLine1 = new Vertical(0,0,24,'#');
+            Vertical vLine1 = new Vertical(0,24,0,'#');
             vLine1.Draw();
-            Vertical vLine2 = new Vertical(78, 0, 24, '#');
+            Vertical vLine2 = new Vertical(0, 24, 78, '#');
             vLine2.Draw();
 
 

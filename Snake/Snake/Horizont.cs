@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    class Horizont
+    class Horizont : Figure 
     {
-
-        List<Point> pList;
 
         public Horizont(int xLeft, int xRight,int y, char sym)
         {
@@ -21,12 +19,5 @@ namespace Snake
                 }   
         }
 
-        public void Draw()
-        {
-            foreach (Point p in pList)
-            {
-                p.DrawSym();
-            }
-        }
     }
 }

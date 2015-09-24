@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    class Vertical
+    class Vertical: Figure
     {
-        List<Point> pList;
 
-        public Vertical(int x, int yUp, int yDown, char sym)
+
+        public Vertical(int yUp, int yDown, int x,  char sym)
         {
             pList = new List<Point>();
             for (int i = yUp; i <= yDown; i++)
@@ -20,12 +20,6 @@ namespace Snake
             }
         }
 
-        public void Draw()
-        {
-            foreach (Point p in pList)
-            {
-                p.DrawSym();
-            }
-        }
+
     }
 }
